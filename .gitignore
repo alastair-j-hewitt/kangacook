@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local data and secrets
+db.sqlite3
+.env
+
+# Editors and OS files
+.idea/
+.vscode/
+.DS_Store
+
+# Frontend
+node_modules/
+dist/
+
+# Never commit SSH keys
+shFile
+shFile.pub
+*.pem
+id_rsa*
+id_ed25519*
