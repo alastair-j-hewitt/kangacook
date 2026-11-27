@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Recipe List</title>
+</head>
+<body>
+<h1>Recipe List</h1>
+<ul>
+    {% for recipe in recipes %}
+        <li><a href="{% url 'recipe-detail' recipe.pk %}">{{ recipe.title }}</a></li>
+    {% empty %}
+        <li>No recipes yet. Load the sample data with: python manage.py loaddata mock_data</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
